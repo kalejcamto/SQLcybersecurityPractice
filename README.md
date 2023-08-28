@@ -32,6 +32,7 @@ FROM log_in_attempts
 ORDER BY login_date, login_time;
  ![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/bebab5d8-9ae2-4a3a-88cf-c4976f5b34ff)
 
+Conclusion
 This is my introductory lab practice to SQL
 
 Server version: 10.3.39-MariaDB-0+deb10u1 Debian 10
@@ -62,6 +63,50 @@ Next, my team has determined that there is an issue with all the machines in the
 2.	Modify the query you used in the previous step so that it returns information on all the employees in the 'South' building. Use the LIKE operator with % in this query.
  ![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/dc79e621-d0f2-44d4-9a35-d8c05b12b938)
 
+Conclusion
 •	This has been practical experience applying the WHERE clause to filter what a SQL query returns and
 •	use the LIKE operator to filter for patterns.
+
+
+THIRD EXERCISE
+
+Task 1. Retrieve login attempts after a certain date
+In this task, I needed to investigate a recent security incident. To do this, I needed to gather information about login attempts made after a certain date.
+1.	I Completed the SQL query to retrieve data for login attempts made after '2022-05-09'. Replaced X with the correct operator:
+ ![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/aee85114-7807-4ed1-bfbb-810cae7e9bed)
+
+Now, based on my first query, I found a need to expand the date range to include 2022-05-09 in your search.
+2.	I completed the SQL query to retrieve data for login attempts that were made on or after '2022-05-09'. Replace X with the correct operator: 
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/e55147b6-92ba-4efd-83a1-1949e3df68a3)
+
+Task 2. Retrieve logins in a date range
+In this task, I needed to narrow the focus of the search. Login attempts made after 2022-05-11 shouldn't be included. I used the BETWEEN and AND operators to return results between '2022-05-09' and '2022-05-11'.
+•	I ran the query to retrieve the required records. I inserted the required dates X and Y:
+ ![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/44d57d9d-48dd-4a38-95fb-8f943e2f56e5)
+
+Task 3. Investigate logins at certain times
+In this task, I needed to investigate logins that were made at certain times. To do this, I filtered the data in the log_in_attempts table by login time (login_time).
+First, the organization's typical work hours begin at 07:00:00. Retrieve all login attempts made before 07:00:00 to learn more about the users who are logging in outside of typical hours.
+1.	I wrote a SQL query to retrieve data for login attempts made before '07:00:00'. 
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/0b6b5bdc-d116-44b6-9602-52ffb8954b5a)
+
+The query in the previous step returned more results than required.
+2.	I modified the query to return logins between '06:00:00' and '07:00:00'.
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/834e3698-bf5b-4215-acda-7ab9dd5b79c4)
+
+Task 4. Investigate logins by event ID
+In this task, I needed to investigate login attempts based on event ID numbers. With this query, I want to return only the event_id, username, and login_date fields from the log_in_attempts table.
+1.	I wrote a query to return login attempts with event_id greater than or equal to 100.
+ ![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/34372c8b-01ac-4e12-a496-3ad724e2704d)
+
+2.	I modified the query to return only login attempts with event_id between 100 and 150.
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/57e3ab62-8de1-4f26-8b3d-bf79cd3dfccf)
+
+Conclusion
+I completed this activity and practiced applying
+•	the WHERE keyword
+•	the BETWEEN and AND operators, and
+•	operators for working with numeric or date and time data types (for example, =, >, >=)
+to filter data from a table.
+I am ready to filter for numbers and dates to extract all sorts of useful data!
 
