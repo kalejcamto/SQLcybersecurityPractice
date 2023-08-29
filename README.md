@@ -110,3 +110,27 @@ I completed this activity and practiced applying
 to filter data from a table.
 I am ready to filter for numbers and dates to extract all sorts of useful data!
 
+FOURTH EXERCISE
+
+Task 1. Match employees to their machines
+First, I must identify which employees are using which machines. The data is located in the machines and employees tables.
+I must use a SQL inner join to return the records you need based on a connecting column. In the scenario, both tables include the device_id column, which I use to perform the join.
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/a39edc88-f684-4440-b2b5-b0aac06143a9)
+
+Secondly, I completed the query to perform an inner join between the machines and employees tables on the device_id column. 
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/d448911f-2739-42ec-8110-a9836bf77dd5)
+
+I ran the following SQL query to connect the machines and employees tables through a right join. 
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/35d7cfc1-ef2e-4bbd-a3c8-7d48d2720b9f)
+
+Task 3. Retrieve login attempt data
+To continue investigating the security incident, you must retrieve the information on all employees who have made login attempts. To achieve this, you’ll perform an inner join on the employees and log_in_attempts tables, linking them on the common username column.
+I ran the following SQL query to perform an inner join on the employees and log_in_attempts tables. 
+![image](https://github.com/kalejcamto/SQLcybersecurityPractice/assets/101201140/668a2b54-e14e-41b6-8a5c-9ee06ff97ee0)
+
+Conclusion
+I should be able to use joins to combine data from multiple tables in a database.
+This is practical experience in using
+INNER JOIN,
+LEFT JOIN, and
+RIGHT JOIN.
